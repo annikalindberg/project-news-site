@@ -1,0 +1,67 @@
+/* styling for tablet (668 > 1024px) */
+
+/* ^^ ovan betyder att från en device som större än 668px) så ska angivna regler appliceras) ^^ 
+*/
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    body {
+        background-color: red;
+    }
+
+    .navbar {
+        border: 2px solid green;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .big-news {
+        display: grid;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .big-news {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        gap: 10px;
+    }
+
+    .flex-item {
+        background: pink;
+    }
+
+    .flex-item-1 {
+        grid-column: span 8;
+    }
+
+    .flex-item-2 {
+        grid-column: span 4;
+    }
+
+    .flex-item-3 {
+        grid-column: span 12;
+    }
+
+    img {
+        width: 200px;
+    }
+}
