@@ -1,10 +1,12 @@
 /* generell styling (for mobile < 667px). Resten är mediaqueries */ 
 
 html {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: blue;
-  margin: 20px;
-  padding: 20px;
+ 
+}
+
+body {
+  background-color: #fff;margin: 20px;
+  padding: 20px;background-color: blue;
 }
 
 h1 {
@@ -33,6 +35,7 @@ h1 {
   float: left;
   padding-top: 10px;
 }
+
 .navbar {
   border: 2px solid green;
   padding: 10px;
@@ -74,7 +77,6 @@ img {
   margin: 10px;
   flex-wrap: wrap;
 }
-
 
 
 /* styling for desktop (1024px eller större) */
@@ -133,4 +135,4 @@ img {
     flex-wrap: wrap;
   }
 
-  
+}
