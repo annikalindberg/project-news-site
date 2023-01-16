@@ -1,13 +1,20 @@
 /* generell styling (for mobile < 667px). Resten är mediaqueries */ 
 
 body {
-  background-color: #fff;margin: 20px;
-  padding: 20px;background-color: blue;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffb86fff;
 }
 .hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: none;
 }
 
 h1 {
@@ -19,12 +26,12 @@ h1 {
 }
 
 .logo {
-max-width: 50px;
-
-
+  max-width: 60px;
+  display: flex;
+  
 }
 
-/* figure out how to get the hamburger to be to the right! */
+/* figure out how to get the hamburger to be to the right, and even be visable?! */
 
 .hamburger {
   height: 3px;
@@ -32,25 +39,18 @@ max-width: 50px;
   background: black;
   display: block;
   margin-bottom: 5px;
-
-
+  
 }
 
-
+/*
 .navbar {
+  background-color: #e0ca3cff;
   border: 2px solid green;
   display: flex;
   align-items: center;
   justify-content: center; 
-  display: none; /* only for mobile section! */
-}
-
-
-li {
-  font-size: 30px;
-  border: solid black;
- 
-}
+  display: none;  only for mobile section! 
+} */
 
 .big-news {
   border: 2px solid black;
@@ -73,10 +73,9 @@ li {
 
 }
 
-img {
-  width: 200px;
-  margin: 10px;
-  flex-wrap: wrap;
+.logo {
+  width: 100px;
+  
 }
 
 
@@ -86,42 +85,62 @@ img {
 
   .hero-container{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: red;
-    /*only for desktop */
-  }
-  .navbar-links {
-    display: flex;
-   justify-content: space-between;
-  
+    flex-direction: row;
+    background-color: #3e2f5bff;
     
   }
+
+  .navbar-links {
+    display: flex;
+   justify-content: center;
+   
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+
+  }
+  /*
   .navbar {
     border: 2px solid green;
     margin: 10px;
     padding: 10px;
-    height: 200px;
+    height: 50px;
     width: 1000px;
     display: flex;
-    justify-content: space-around;
-    flex-direction:row;
-    align-items: center; 
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly
+    flex-direction: row; */
+
+    
   }
-  .
 
   .hamburger {
-    display: none;
+    display: none; /*help with - why is the hamburger still showing? */
   }
 
 
   a {
     text-decoration: none;
     color: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+  }
+  a:link {
+    background-color: #3e2f5bff;
   }
 
   li {
     list-style: none;
+    margin: 5px;
+    border: 5px solid pink;
+    font-size: 20px;
+  
+    
   }
 
   .big-news {
@@ -147,7 +166,6 @@ img {
   img {
     width: 200px;
     margin: 10px;
-    flex-wrap: wrap;
   }
 
 }
