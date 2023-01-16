@@ -39,18 +39,17 @@ max-width: 50px;
 
 .navbar {
   border: 2px solid green;
-  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  display: none; /* only for mobile breakpoint. Copy block and change propertie to "display: inline/block" for tablet and desktop! */
+  justify-content: center; 
+  display: none; /* only for mobile section! */
 }
 
+
 li {
-  font-size: 20px;
-  margin: 20px;
+  font-size: 30px;
   border: solid black;
-  padding: 20px;
+ 
 }
 
 .big-news {
@@ -70,6 +69,7 @@ li {
   padding: 10px;
   margin: 10px;
   align-items: center;
+  width: 200px;
 
 }
 
@@ -84,22 +84,36 @@ img {
 
 @media (min-width: 1025px) {
 
-
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: red;
+    /*only for desktop */
+  }
+  .navbar-links {
+    display: flex;
+   justify-content: space-between;
+  
+    
+  }
   .navbar {
     border: 2px solid green;
-    background-color: red; /*only for desktop */
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    width: 1000px;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction:row;
+    align-items: center; 
   }
+  .
 
   .hamburger {
     display: none;
   }
 
-  .menu {
-    display: none;
-  }
 
   a {
     text-decoration: none;
