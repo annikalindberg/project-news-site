@@ -1,12 +1,13 @@
 /* generell styling (for mobile < 667px). Resten är mediaqueries */ 
 
-html {
- 
-}
-
 body {
   background-color: #fff;margin: 20px;
   padding: 20px;background-color: blue;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -14,13 +15,16 @@ h1 {
   margin: 10px;
   padding: 10px;
   font-family:fantasy;
-  font-size: 3vw;
+  font-size: 30px;
 }
 
 .logo {
-  width: 100px;
+max-width: 50px;
+
 
 }
+
+/* figure out how to get the hamburger to be to the right! */
 
 .hamburger {
   height: 3px;
@@ -28,13 +32,10 @@ h1 {
   background: black;
   display: block;
   margin-bottom: 5px;
+
+
 }
 
-.menu {
-  margin-right: 10px;
-  float: left;
-  padding-top: 10px;
-}
 
 .navbar {
   border: 2px solid green;
