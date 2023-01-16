@@ -3,7 +3,6 @@
 body {
   background-color: #fff;
   margin: 20px;
-  padding: 20px;
   background-color: #ffb86fff;
 }
 .hero-container {
@@ -11,16 +10,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #3e2f5bff;
+  
 }
 
 ul {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: white;
   margin: 10px;
-  padding: 10px;
   font-family:fantasy;
   font-size: 30px;
 }
@@ -42,15 +45,16 @@ h1 {
   
 }
 
-/*
+
 .navbar {
   background-color: #e0ca3cff;
   border: 2px solid green;
   display: flex;
   align-items: center;
-  justify-content: center; 
-  display: none;  only for mobile section! 
-} */
+  justify-content: center;
+  width: 100%;
+
+} 
 
 .big-news {
   border: 2px solid black;
@@ -75,6 +79,7 @@ h1 {
 
 .logo {
   width: 100px;
+  margin-top: 20px;
   
 }
 
@@ -102,7 +107,7 @@ h1 {
     border: 2px solid black;
 
   }
-  /*
+  
   .navbar {
     border: 2px solid green;
     margin: 10px;
@@ -112,10 +117,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    justify-content: space-evenly
-    flex-direction: row; */
+    justify-content: space-evenly;
+    flex-direction: row;
 
-    
+
   }
 
   .hamburger {
@@ -130,6 +135,7 @@ h1 {
     margin: 10px;
     display: flex;
   }
+
   a:link {
     background-color: #3e2f5bff;
   }
